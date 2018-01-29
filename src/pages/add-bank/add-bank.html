@@ -1,0 +1,63 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Add Bank</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/cap.png">
+        </ion-avatar>
+          <ion-label>Bank</ion-label>
+          <ion-select style="width: 100%" [(ngModel)]="banks">
+            <ion-option value="corp">Corporation Bank</ion-option>
+            <ion-option value="citi">Citi Bank</ion-option>
+            <ion-option value="synd">Syndicate Bank</ion-option>
+            <ion-option value="sbi">SBI Bank</ion-option>
+            <ion-option value="boi">Bank of India</ion-option>
+            <ion-option value="hdfc">HDFC Bank</ion-option>
+            <ion-option value="axis">Axis Bank</ion-option>
+          </ion-select>  
+      </ion-item>
+      <ion-item>
+        <ion-label>Ac/No</ion-label>
+        <ion-input type="number" placeholder="Account No"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>IFSC</ion-label>
+        <ion-input type="text" placeholder="IFSC Code"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Address</ion-label>
+        <ion-input type="text" placeholder="Address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Card No</ion-label>
+        <ion-input type="number" placeholder="Card No"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Card Type</ion-label>
+        <ion-select [(ngModel)]="cardType">
+          <ion-option value="visa">Visa</ion-option>
+          <ion-option value="master">Master</ion-option>
+          <ion-option value="rupay">Rupay</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>CVV No</ion-label>
+        <ion-input type="number" placeholder="CVV No"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="YYYY-MM" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <button ion-button full>Add</button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

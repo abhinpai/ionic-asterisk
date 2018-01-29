@@ -1,0 +1,28 @@
+
+<ion-header >
+  <ion-navbar color="primary">
+    <ion-title>Credit-Debit</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="add"></ion-icon>
+      </button>
+      <button ion-button icon-only >
+        <ion-icon name="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div>
+      <ion-segment [(ngModel)]="type" color="primary">
+        <ion-segment-button value="credit" (click)="credit()">
+         Credit
+        </ion-segment-button>
+        <ion-segment-button value="debit" (click)="debit()">
+          Debit
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+</ion-content>

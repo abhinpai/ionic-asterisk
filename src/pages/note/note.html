@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Notes</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addNote()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+      <button ion-button icon-only >
+        <ion-icon name="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card (click)="viewNote()">
+    <ion-item>
+      <h2>Title</h2>
+     <p>The body of the notes</p>
+    </ion-item>
+  </ion-card>
+</ion-content>

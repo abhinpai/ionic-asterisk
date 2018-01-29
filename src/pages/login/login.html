@@ -1,0 +1,23 @@
+<ion-content id="login" padding scroll="false">
+  <ion-card style=" margin-top: 50%">
+    <ion-item class="bgImage">
+      <div class="header padding text-center">
+        <img src="assets/imgs/cap.png" alt="Your logo here" style="width: 100px;" />
+      </div>
+    </ion-item>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>USN</ion-label>
+        <ion-input type="text" placeholder="USN"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Key</ion-label>
+        <ion-input type="password" placeholder="Secrate Key"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button full (click)="login()" large round>Check In</button>
+        <button block clear full ion-button full (click)="login()">or use your fingre-print! <ion-icon name="ios-finger-print-outline"></ion-icon></button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
